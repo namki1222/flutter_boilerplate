@@ -17,9 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$ExampleFormUiModel {
   String get name => throw _privateConstructorUsedError;
-
   String get email => throw _privateConstructorUsedError;
-
   String get phoneNumber => throw _privateConstructorUsedError;
 
   /// Create a copy of ExampleFormUiModel
@@ -34,7 +32,6 @@ abstract class $ExampleFormUiModelCopyWith<$Res> {
   factory $ExampleFormUiModelCopyWith(
           ExampleFormUiModel value, $Res Function(ExampleFormUiModel) then) =
       _$ExampleFormUiModelCopyWithImpl<$Res, ExampleFormUiModel>;
-
   @useResult
   $Res call({String name, String email, String phoneNumber});
 }
@@ -46,7 +43,6 @@ class _$ExampleFormUiModelCopyWithImpl<$Res, $Val extends ExampleFormUiModel>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -82,7 +78,6 @@ abstract class _$$ExampleFormUiModelImplCopyWith<$Res>
   factory _$$ExampleFormUiModelImplCopyWith(_$ExampleFormUiModelImpl value,
           $Res Function(_$ExampleFormUiModelImpl) then) =
       __$$ExampleFormUiModelImplCopyWithImpl<$Res>;
-
   @override
   @useResult
   $Res call({String name, String email, String phoneNumber});
@@ -172,10 +167,8 @@ abstract class _ExampleFormUiModel implements ExampleFormUiModel {
 
   @override
   String get name;
-
   @override
   String get email;
-
   @override
   String get phoneNumber;
 
