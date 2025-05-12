@@ -1,5 +1,9 @@
 # 남기의 플러터 보일러플레이트 및 공부
 
+# 이후 추가될 부분들 
+
+bloc + riverpod을 이용한 구조로 변경
+
 프로젝트 구성 시, 반복된 작업 및 반드시 필요한 필수 파일들이 포함된 보일러플레이트 패키지입니다.
 
 ## 💽 Installation
@@ -43,8 +47,6 @@ flutter pub run build_runner watch --delete-conflicting-outputs
   <br/><br/>
 
 ## 💡 포함된 패키지 (Decument Deprecated, 실제 Pubspec.yaml 을 확인해주세요.)
-
-> [2024.04.04.] 하기 항목은 더 이상 유효하지 않습니다.<br/>대략적인 참고용으로만 열람해주세요.
 
 #### 해당 패키지 목록은 필요에 따라, 혹은 Deprecated 등의 사유로 예고 없이 버전이 변경될 수 있습니다.
 
