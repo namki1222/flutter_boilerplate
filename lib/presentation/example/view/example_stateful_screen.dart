@@ -1,6 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/enum/response_state_enum.dart';
 import '../../../core/layout/default_layout.dart';
 import '../../../service/example/basic/viewModel/example_view_model.dart';
 
@@ -12,16 +15,21 @@ class ExampleScreen extends ConsumerStatefulWidget {
 }
 
 class _ExampleScreenState extends ConsumerState<ExampleScreen> {
+  late final StreamSubscription<NetworkResStatus> example_stream_sub;
   @override
   void initState() {
     super.initState();
-
-    /// TODO: 초기 데이터를 가져온다.
-    getInitialData();
-  }
-
-  Future<void> getInitialData() async {
-    setState(() {});
+    final viewModel = ref.read(exampleViewModelProvider.notifier);
+    example_stream_sub = viewModel.exampleStream.listen((state) {
+      switch (state) {
+        case NetworkResStatus.loading:
+          break;
+        case NetworkResStatus.success:
+          break;
+        case NetworkResStatus.failure:
+          break;
+      }
+    });
   }
 
   @override
